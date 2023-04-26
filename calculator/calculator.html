@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style_calc.css">
+</head>
+
+<header>
+    <div id="TopBar">
+        <h1>Calculator</h1>
+        <a href="../index.html"><p>back</p></a>
+    </div>
+</header>
+
+<section>
+    <div class="calc-container">
+        <p id="previous-operand">0</p>
+        <p id="current-operand">0</p>
+        <button class="AC span2" onclick="allClear()">AC</button>
+        <button class="C" onclick="singleClear()">C</button>
+        <button class="Operation" onclick="setOperation('+')">+</button>
+        <button class="Number" onclick="addDigit(1)">1</button>
+        <button class="Number" onclick="addDigit(2)">2</button>
+        <button class="Number" onclick="addDigit(3)">3</button>
+        <button class="Operation" onclick="setOperation('-')">-</button>
+        <button class="Number" onclick="addDigit(4)">4</button>
+        <button class="Number" onclick="addDigit(5)">5</button>
+        <button class="Number" onclick="addDigit(6)">6</button>
+        <button class="Operation" onclick="setOperation('x')">x</button>
+        <button class="Number" onclick="addDigit(7)">7</button>
+        <button class="Number" onclick="addDigit(8)">8</button>
+        <button class="Number" onclick="addDigit(9)">9</button>
+        <button class="Operation" onclick="setOperation('/')">/</button>
+        <button class="Number" onclick="addDigit('DoubleZero')">00</button>
+        <button class="Number" onclick="addDigit(0)">0</button>
+        <button class="Operation span2" onclick="evaluateOperation()">=</button>
+    </div>
+</section>
+
+<script src="calc.js"></script>
